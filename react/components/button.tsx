@@ -1,9 +1,10 @@
 type props = {
   color: "azul" | "vermelho" | "verde";
   titulo: string;
+  funcao?: () => void;
 };
 
-export default function ButtonReact({ color, titulo }: props) {
+export default function ButtonReact({ color, titulo, funcao }: props) {
   let buttonColor = "";
 
   switch (color) {
@@ -20,7 +21,7 @@ export default function ButtonReact({ color, titulo }: props) {
 
   return (
     <div>
-      <button className={`${buttonColor}`}>{titulo}</button>
+      <button onClick={funcao} className={`${buttonColor}`}>{titulo}</button>
     </div>
   );
 }

@@ -1,88 +1,49 @@
-// export default function aula1() {
-//   return (
-//     <div className="flex lg:flex-col h-screen">
-//       <div className="z-10 order-1 bg-blue-600 md:h-full md:w-52 lg:w-full lg:h-16">
-//         <li className="lg:flex flex-row space-x-5 list-none p-3 hidden">
-//           <ul className="text-white text-3xl font-bold p-0.5">SENAC</ul>
-//           <ul className="text-white cursor-pointer p-2 hover:bg-orange-500 hover:animate-pulse rounded-lg">
-//             Inicio
-//           </ul>
-//           <ul className="text-white cursor-pointer p-2 hover:bg-orange-500 hover:animate-pulse rounded-lg">
-//             Sobre
-//           </ul>
-//           <ul className="text-white cursor-pointer p-2 hover:bg-orange-500 hover:animate-pulse rounded-lg">
-//             Cadastro
-//           </ul>
-//         </li>
-//         <div className="lg:hidden">
-//           <ul className="text-white text-3xl text-center font-bold py-5">
-//             SENAC
-//           </ul>
-//           <li className="list-none flex flex-col p-3 gap-y-5">
-//             <ul className="text-white text-xl">Início</ul>
-//             <ul className="text-white text-xl">Perfil</ul>
-//             <ul className="text-white text-xl">Configurações</ul>
-//             <ul className="text-white text-xl">Sair</ul>
-//           </li>
-//         </div>
-//       </div>
-//       <div className="order-2 flex space-y-2 flex-col lg:bg-gray-100 p-6">
-//         <h1 className="text-3xl text-black font-bold">Bem-vindo!</h1>
-//         <p className="text-gray-500">Tela simples usando tailwind css</p>
-//       </div>
-//     </div>
-//   );
-// }
+"use client";
+import { useState } from "react";
+import { text } from "stream/consumers";
 
-// export default function aula1() {
-//   return (
-//     <div className="flex items-center justify-center bg-gray-300 w-screen h-screen">
-//       <div className="size-80 flex flex-col p-8 justify-evenly items-center shadow-2xl bg-white rounded-2xl">
-//         <h1 className="font-bold text-2xl">Login</h1>
-//         <div className="flex flex-col gap-y-3">
-//           <label className="flex flex-col gap-y-1">
-//             Email
-//             <input
-//               placeholder="Digite seu Email"
-//               type="text"
-//               className="indent-2 text-[14px] h-8 ring-gray-200 ring-2 rounded-[5px] w-62 outline-0 focus:ring-blue-500 focus:shadow-lg focus:shadow-blue-500"
-//             />
-//           </label>
-//           <label className="flex flex-col gap-y-1">
-//             Senha
-//             <input
-//               placeholder="Digite sua senha"
-//               type="password"
-//               className="indent-2 text-[14px] h-8 ring-gray-200 ring-2 rounded-[5px] w-62 outline-0 focus:ring-blue-500 focus:shadow-lg focus:shadow-blue-500"
-//             />
-//           </label>
-//         </div>
-//         <button className="active:bg-blue-400 cursor-pointer bg-blue-600 transition-colors hover:bg-blue-500 w-full h-8 text-white rounded-[5px] mt-8">
-//           Entrar
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
+export default function aulaUseState() {
+  // const [contador, setContador] = useState(0); atividade - 1
 
-// import Component from "@/components/component";
+  // const [texto, setTexto] = useState(true); atividade - 2
 
-// export default function aula1() {
-//   return (
-//     <div>
-//       <Component nome="enzo" idade={19}/>
-//     </div>
-//   );
-// }
+  // const [inputTexto, setInputTexto] = useState(""); atividade - 3
 
-import ButtonReact from "@/components/button";
+  const [tarefas, setTarefas] = useState([]);
 
-export default function aula1() {
   return (
-    <div>
-      <ButtonReact color="azul" titulo="botão"/>
-      <ButtonReact color="vermelho" titulo="botão"/>
-      <ButtonReact color="verde" titulo="botão"/>
+    // atividade - 1
+
+    // <div className="w-screen h-screen flex justify-center items-center">
+    //   <button className="w-1/4 h-20 rounded-sm bg-blue-500 text-white" onClick={() => { setContador(contador + 1) }}>{contador}</button>
+    // </div>
+
+    //atividade - 2
+
+    // <div className="w-screen h-screen flex flex-col justify-center items-center">
+    //   <h1 className={`font-bold text-3xl ${texto ? "block" : "hidden"}`}>
+    //     oioioioioioioi
+    //   </h1>
+    //   <button
+    //     className="w-1/5 h-10 rounded-sm bg-blue-500 text-white"
+    //     onClick={() => {
+    //       setTexto(texto ? false : true);
+    //     }}
+    //   >
+    //     {texto ? "Esconder" : "Aparecer"}
+    //   </button>
+    // </div>
+
+    // atividade - 3
+
+    // <div className="w-screen h-screen flex flex-col bg-gray-100 justify-center items-center">
+    //   <input placeholder="oioi" value={inputTexto} onChange={e => setInputTexto(e.target.value) } className="bg-gray-200 w-1/4 h-8 indent-2 outline-0 rounded-sm" type="text" />
+    //   <p>{inputTexto == "" ? 'Digite seu nome' : `Olá! ${inputTexto}`}</p>
+    // </div>
+
+    // atividade - 4
+    <div className="w-screen h-screen flex flex-col bg-gray-100 justify-center items-center">
+      <h1 className="font-bold text-2xl">Insira a sua atividade: </h1>
     </div>
   );
 }
