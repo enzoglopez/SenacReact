@@ -21,18 +21,18 @@ export default function aulaUseState() {
   return (
     // atividade - 1
 
-    // <div className="w-screen h-screen flex justify-center items-center">
-    //   <button className="w-1/4 h-20 rounded-sm bg-blue-500 text-white" onClick={() => { setContador(contador + 1) }}>{contador}</button>
+    // <div className="flex items-center justify-center w-screen h-screen">
+    //   <button className="w-1/4 h-20 text-white bg-blue-500 rounded-sm" onClick={() => { setContador(contador + 1) }}>{contador}</button>
     // </div>
 
     //atividade - 2
 
-    // <div className="w-screen h-screen flex flex-col justify-center items-center">
+    // <div className="flex flex-col items-center justify-center w-screen h-screen">
     //   <h1 className={`font-bold text-3xl ${texto ? "block" : "hidden"}`}>
     //     oioioioioioioi
     //   </h1>
     //   <button
-    //     className="w-1/5 h-10 rounded-sm bg-blue-500 text-white"
+    //     className="w-1/5 h-10 text-white bg-blue-500 rounded-sm"
     //     onClick={() => {
     //       setTexto(texto ? false : true);
     //     }}
@@ -43,22 +43,22 @@ export default function aulaUseState() {
 
     // atividade - 3
 
-    // <div className="w-screen h-screen flex flex-col bg-gray-100 justify-center items-center">
-    //   <input placeholder="oioi" value={inputTexto} onChange={e => setInputTexto(e.target.value) } className="bg-gray-200 w-1/4 h-8 indent-2 outline-0 rounded-sm" type="text" />
+    // <div className="flex flex-col items-center justify-center w-screen h-screen bg-gray-100">
+    //   <input placeholder="oioi" value={inputTexto} onChange={e => setInputTexto(e.target.value) } className="w-1/4 h-8 bg-gray-200 rounded-sm indent-2 outline-0" type="text" />
     //   <p>{inputTexto == "" ? 'Digite seu nome' : `Olá! ${inputTexto}`}</p>
     // </div>
 
     // atividade - 4
-    // <div className="w-screen h-screen flex flex-col gap-y-2 bg-gray-100 justify-center items-center">
-    //   <h1 className="font-bold text-2xl">Insira a sua atividade: </h1>
+    // <div className="flex flex-col items-center justify-center w-screen h-screen bg-gray-100 gap-y-2">
+    //   <h1 className="text-2xl font-bold">Insira a sua atividade: </h1>
     //   <input
-    //     className="bg-gray-200 w-lg h-8 indent-2 rounded-md"
+    //     className="h-8 bg-gray-200 rounded-md w-lg indent-2"
     //     type="text"
     //     value={tarefa}
     //     onChange={(e) => setTarefa(e.target.value)}
     //   />
     //   <button
-    //     className="bg-blue-300 w-md h-6 text-white rounded-md cursor-pointer"
+    //     className="h-6 text-white bg-blue-300 rounded-md cursor-pointer w-md"
     //     onClick={() => {
     //       setArrayTarefas([...arrayTarefas, tarefa]);
     //     }}
@@ -77,7 +77,7 @@ export default function aulaUseState() {
     //     onClick={() => {
     //       setContadorAzul(contadorAzul + 1);
     //     }}
-    //     className="w-1/4 h-20 rounded-sm text-white bg-blue-600"
+    //     className="w-1/4 h-20 text-white bg-blue-600 rounded-sm"
     //   >
     //     {contadorAzul}
     //   </button>
@@ -85,7 +85,7 @@ export default function aulaUseState() {
     //     onClick={() => {
     //       setContadorVermelho(contadorVermelho + 1);
     //     }}
-    //     className="w-1/4 h-20 rounded-sm text-white bg-red-600"
+    //     className="w-1/4 h-20 text-white bg-red-600 rounded-sm"
     //   >
     //     {contadorVermelho}
     //   </button>
@@ -93,14 +93,14 @@ export default function aulaUseState() {
     //     onClick={() => {
     //       setContadorVerde(contadorVerde + 1);
     //     }}
-    //     className="w-1/4 h-20 rounded-sm text-white bg-green-600"
+    //     className="w-1/4 h-20 text-white bg-green-600 rounded-sm"
     //   >
     //     {contadorVerde}
     //   </button>
     // </div>
 
-    // <div className="flex items-center justify-center flex-col">
-    //   <button onClick={() => { like ? setContLike(contLike + 1) : ''; setLike(like ? false : true)}} className="rounded-md bg-blue-600 text-white w-md h-8">{like ? 'like' : 'dislike'}</button>
+    // <div className="flex flex-col items-center justify-center">
+    //   <button onClick={() => { like ? setContLike(contLike + 1) : ''; setLike(like ? false : true)}} className="h-8 text-white bg-blue-600 rounded-md w-md">{like ? 'like' : 'dislike'}</button>
     //   <p className="text-center">{contLike}</p>
     // </div>
   );

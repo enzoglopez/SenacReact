@@ -38,7 +38,7 @@
 //   const [contador, setContador] = useState(0);
 
 //   return (
-//     <div className="w-screen h-screen flex items-center justify-center bg-gray-100">
+//     <div className="flex items-center justify-center w-screen h-screen bg-gray-100">
 //       <button
 //         onClick={() => {
 //           setContador(contador + 1);
@@ -50,7 +50,7 @@
 //     </div>
 
 //     // <Menu />
-//     // <div className="w-full flex flex-col p-6 gap-y-4">
+//     // <div className="flex flex-col w-full p-6 gap-y-4">
 //     //   <h1 className="text-2xl font-bold">Usuários</h1>
 //     //   {
 //     //     lista.map((pessoa) => (
@@ -65,8 +65,8 @@
 
 //     //     <>
 //     //       <Header />
-//     //       <div className="bg-gray-100 md:mt-12 w-full h-full items-center sm:justify-center flex flex-col">
-//     //         <div className="py-8 flex w-full justify-center gap-x-8">
+//     //       <div className="flex flex-col items-center w-full h-full bg-gray-100 md:mt-12 sm:justify-center">
+//     //         <div className="flex justify-center w-full py-8 gap-x-8">
 //     //           <Card
 //     //             titulo="Componente 1"
 //     //             descricao="Esse é o primeiro cartão"
@@ -83,7 +83,7 @@
 //     //             horizontal={false}
 //     //           />
 //     //         </div>
-//     //         <div className="px-8 w-full flex flex-col gap-y-8 justify-center items-center">
+//     //         <div className="flex flex-col items-center justify-center w-full px-8 gap-y-8">
 //     //           <Card
 //     //             titulo="Componente 4 em horizontal"
 //     //             descricao="Esse é o quarto cartão em horizontal"
@@ -99,7 +99,7 @@
 //     //       <Footer texto="@ 2025 Minha Empresa - Todos os direitos reservados" />
 //     //     </>
 
-//     // <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+//     // <div className="flex items-center justify-center w-full h-full bg-gray-100">
 //     //   <Popup
 //     //     titulo="Bem-vindo!"
 //     //     acao={() => {
